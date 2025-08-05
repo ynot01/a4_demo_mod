@@ -3,7 +3,6 @@ using BepInEx.Logging;
 using BepInEx.Unity.IL2CPP;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using SCPE;
 
 namespace demon_mode
 {
@@ -39,9 +38,6 @@ namespace demon_mode
 		{
 			Log = base.Log;
 
-			// Add input to toggle the effects of the mod.
-			// Adds at time of launch, which may cause issues.
-			// Consider moving to ClearFateVolumeOnFateChanged when not exists somehow.
 			AddComponent<DemonMode_Component>();
 
 			Log.LogInfo($"Plugin demon_mode loaded successfully.");
