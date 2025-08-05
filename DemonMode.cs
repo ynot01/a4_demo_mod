@@ -12,18 +12,6 @@ namespace demon_mode
 	{
 		void Update()
 		{
-			Scene scene = SceneManager.GetActiveScene();
-
-			GameObject[] rootObjs = scene.GetRootGameObjects();
-			foreach (GameObject obj in rootObjs)
-			{
-				var pFate = obj.GetComponent<Entities.Player.PlayerFate>();
-				if (pFate && pFate.CurrentFate.volumeProfile) {
-                    pFate.CurrentFate.volumeProfile.TryGet(out LUT lut);
-                    lut.invert.value = 1;
-				};
-			}
-
 			Scene uiScene = SceneManager.GetSceneByName("UserInterface");
             if (uiScene.loadingState == Scene.LoadingState.Loaded)
             {
