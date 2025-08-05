@@ -1,5 +1,7 @@
 The rot spreads. They call the ones who lurk underneath scum, but you know what they really are.
 
+<img width="1288" height="105" alt="image" src="https://github.com/user-attachments/assets/5bca7307-1160-4ff2-a636-490f914f8058" />
+
 ![](./demon_scanner_a4.webp)
 
 ## Installing
