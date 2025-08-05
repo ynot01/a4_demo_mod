@@ -1,6 +1,6 @@
 The rot spreads. They call the ones who lurk underneath scum, but you know what they really are.
 
-
+![](./demon_scanner_a4.webp)
 
 ## Installing
 
