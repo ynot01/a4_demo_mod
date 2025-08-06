@@ -12,21 +12,21 @@ namespace demon_mode
 		void Update()
 		{
 			Scene uiScene = SceneManager.GetSceneByName("UserInterface");
-            if (uiScene.loadingState == Scene.LoadingState.Loaded)
-            {
-                GameObject[] uiObjs = uiScene.GetRootGameObjects();
-                foreach (GameObject obj in uiObjs)
-                {
-                    UI.HUD.EntityHighlighter[] ehis = obj.GetComponentsInChildren<UI.HUD.EntityHighlighter>(false);
-                    foreach (UI.HUD.EntityHighlighter ehi in ehis)
-                    {
-                        ehi._text = "DEMON";
-                        ehi.label.color = new Color(1f, 0f, 0f, 1f);
-                        ehi.image.color = new Color(1f, 0f, 0f, 1f);
-                    }
-                }
-            }
-        }
+			if (uiScene.loadingState == Scene.LoadingState.Loaded)
+			{
+				GameObject[] uiObjs = uiScene.GetRootGameObjects();
+				foreach (GameObject obj in uiObjs)
+				{
+					UI.HUD.EntityHighlighter[] ehis = obj.GetComponentsInChildren<UI.HUD.EntityHighlighter>(false);
+					foreach (UI.HUD.EntityHighlighter ehi in ehis)
+					{
+						ehi._text = "DEMON";
+						ehi.label.color = new Color(1f, 0f, 0f, 1f);
+						ehi.image.color = new Color(1f, 0f, 0f, 1f);
+					}
+				}
+			}
+		}
 	}
 
 	[BepInPlugin("demon_mode", "Demon Mode", "0.0.1")]
